@@ -43,6 +43,7 @@
 		B6B02AA7342974FC67A72977 /* Pods-RocketDeveloperTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.debug.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C73A6A4026A30DF9009F462B /* RocketDeveloperTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RocketDeveloperTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		C73A6A4126A30DFA009F462B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C73A6A4526A323B2009F462B /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../../../reusables-reactnative/node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		C8658A9569A16F6B136EED98 /* Pods-RocketDeveloperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.release.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.release.xcconfig"; sourceTree = "<group>"; };
 		D1FC4BF24D81D2F3188E3B38 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RocketDeveloperTest-RocketDeveloperTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -131,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C73A6A4126A30DFA009F462B /* File.swift */,
+				C73A6A4426A3239C009F462B /* Resources */,
 				13B07FAE1A68108700A75B9A /* RocketDeveloperTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RocketDeveloperTestTests */,
@@ -151,6 +153,14 @@
 				00E356EE1AD99517003FC87E /* RocketDeveloperTestTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C73A6A4426A3239C009F462B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C73A6A4526A323B2009F462B /* MaterialIcons.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

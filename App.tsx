@@ -9,17 +9,24 @@
  */
 
 import {NavigationContainer} from '@react-navigation/native';
-import React from 'react';
-import {StyleSheet} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import React, {useEffect, useState} from 'react';
+import {StyleSheet, View} from 'react-native';
+import NoInternet from './src/components/screens/NoInternet/NoInternet';
 import Router from './src/navigation/Router';
+import NetInfo from '@react-native-community/netinfo';
 
 const App = () => {
+  const [isConnected, setIsConnected] = useState(true);
+
+  useEffect(() => {
+    NetInfo.addEventListener(state => setIsConnected(state.isConnected));
+    console.log(isConnected);
+  }, [isConnected]);
   return (
     <NavigationContainer>
-      <SafeAreaView style={styles.container}>
-        <Router />
-      </SafeAreaView>
+      <View style={styles.container}>
+        {isConnected ? <Router /> : <NoInternet />}
+      </View>
     </NavigationContainer>
   );
 };

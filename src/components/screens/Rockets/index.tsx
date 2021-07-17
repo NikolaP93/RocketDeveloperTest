@@ -1,13 +1,14 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 interface Props {}
 
 const Rocket = (props: Props) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>Rocket Screen</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
