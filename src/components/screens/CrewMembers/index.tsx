@@ -1,11 +1,23 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, TouchableOpacity, Text} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {StackRoutes} from '../../../navigation/config/Routes';
+import * as RootNavigation from '../../../navigation/RootNavigation';
 
 interface Props {}
 
 const CrewMembers = (props: Props) => {
-  return <SafeAreaView style={styles.container}></SafeAreaView>;
+  const onPressHandler = () => {
+    RootNavigation.navigate(StackRoutes.crewMember);
+  };
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <TouchableOpacity onPress={onPressHandler}>
+        <Text>Go to CrewMember</Text>
+      </TouchableOpacity>
+    </SafeAreaView>
+  );
 };
 
 const styles = StyleSheet.create({

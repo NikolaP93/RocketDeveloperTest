@@ -14,6 +14,7 @@ import {StyleSheet, View} from 'react-native';
 import NoInternet from './src/components/screens/NoInternet/NoInternet';
 import Router from './src/navigation/Router';
 import NetInfo from '@react-native-community/netinfo';
+import {navigationRef} from './src/navigation/RootNavigation';
 
 const App = () => {
   const [isConnected, setIsConnected] = useState(true);
@@ -22,8 +23,9 @@ const App = () => {
     NetInfo.addEventListener(state => setIsConnected(state.isConnected));
     console.log(isConnected);
   }, [isConnected]);
+
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <View style={styles.container}>
         {isConnected ? <Router /> : <NoInternet />}
       </View>
