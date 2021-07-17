@@ -24,6 +24,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>For viewing the gallery</string>
+  <key>NSCameraUsageDescription</key>
+	<string>For taking a photo.</string>
+  <key>NSUserTrackingUsageDescription</key>
+  <string>For tracking</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
