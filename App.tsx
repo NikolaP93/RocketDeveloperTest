@@ -12,11 +12,14 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import Router from './src/navigation/Router';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <SafeAreaView style={styles.container}></SafeAreaView>
+      <SafeAreaView style={styles.container}>
+        <Router />
+      </SafeAreaView>
     </NavigationContainer>
   );
 };
