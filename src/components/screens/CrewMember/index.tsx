@@ -1,7 +1,7 @@
 import React from 'react';
 import {useEffect} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {usePermission, permissionStrings} from '../../../hooks/usePermissions';
+import {usePermission, permissionStrings} from '../../../modules/hooks/usePermissions';
 
 interface Props {}
 

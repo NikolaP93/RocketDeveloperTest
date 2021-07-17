@@ -15,19 +15,29 @@ import NoInternet from './src/components/screens/NoInternet/NoInternet';
 import Router from './src/navigation/Router';
 import NetInfo from '@react-native-community/netinfo';
 import {navigationRef} from './src/navigation/RootNavigation';
+import ContextProvider from './src/modules/context/Context';
+import FlashMessage from 'react-native-flash-message';
+import Loader from './src/components/Loader/Loader';
 
 const App = () => {
   const [isConnected, setIsConnected] = useState(true);
 
   useEffect(() => {
     NetInfo.addEventListener(state => setIsConnected(state.isConnected));
-    console.log(isConnected);
   }, [isConnected]);
 
   return (
     <NavigationContainer ref={navigationRef}>
       <View style={styles.container}>
-        {isConnected ? <Router /> : <NoInternet />}
+        {isConnected ? (
+          <ContextProvider>
+            <Router />
+          </ContextProvider>
+        ) : (
+          <NoInternet />
+        )}
+        <Loader />
+        <FlashMessage position="top" />
       </View>
     </NavigationContainer>
   );

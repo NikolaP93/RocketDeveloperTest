@@ -1,10 +1,19 @@
 import React from 'react';
+import {useEffect} from 'react';
 import {Text, StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
 
 interface Props {}
 
-const Rocket = (props: Props) => {
+const Rockets = (props: Props) => {
+  const ctx = useSpaceXContext();
+
+  useEffect(() => {
+    ctx.fetchMembers();
+    ctx.fetchRockets();
+  }, []);
+
   return (
     <SafeAreaView style={styles.container}>
       <Text>Rocket Screen</Text>
@@ -18,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Rocket;
+export default Rockets;
