@@ -6,8 +6,6 @@ import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 const {height, width} = Dimensions.get('screen');
 
 export const options = {
-  headerShown: true,
-  headerTitle: () => null,
   headerStyle: {
     height: height / 10,
     elevation: 0,
