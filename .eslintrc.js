@@ -42,7 +42,7 @@ module.exports = {
     semi: ['error', 'always'],
     'max-len': [
       'error',
-      {code: 100, ignorePattern: '^import\\s.+\\sfrom\\s.+;$'},
+      { code: 100, ignorePattern: "^import\\s.+\\sfrom\\s.+;$" },
     ],
   },
 };

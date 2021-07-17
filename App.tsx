@@ -8,14 +8,14 @@
  * @format
  */
 
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <View style={styles.container}></View>
+      <View style={styles.container} />
     </NavigationContainer>
   );
 };
