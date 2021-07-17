@@ -1,8 +1,9 @@
 import React from 'react';
 import {useEffect} from 'react';
-import {Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet, ScrollView} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
+import Card from '../../card/Card';
 
 interface Props {}
 
@@ -16,7 +17,11 @@ const Rockets = (props: Props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Rocket Screen</Text>
+      <ScrollView contentContainerStyle={styles.scrollView}>
+        {ctx?.state?.rockets.map((item, index) => (
+          <Card kind="rocket" key={index} {...item} />
+        ))}
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -24,6 +29,10 @@ const Rockets = (props: Props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+  },
+  scrollView: {
+    flexGrow: 1,
   },
 });
 

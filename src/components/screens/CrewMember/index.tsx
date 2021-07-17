@@ -1,11 +1,45 @@
 import React from 'react';
 import {useEffect} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {usePermission, permissionStrings} from '../../../modules/hooks/usePermissions';
+import {Alert} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import {openSettings, RESULTS} from 'react-native-permissions';
+import {
+  usePermission,
+  permissionStrings,
+} from '../../../modules/hooks/usePermissions';
+import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
+import {handleError} from '../../../util/error';
+import Card from '../../card/Card';
 
-interface Props {}
+import * as RootNavigation from '../../../navigation/RootNavigation';
+import {useState} from 'react';
 
-const CrewMember = (props: Props) => {
+interface Item {
+  name: string;
+  agency: string;
+  image: string;
+}
+
+const openAppSettings = async () => {
+  try {
+    await openSettings();
+  } catch (e) {
+    handleError(e.message);
+  }
+};
+
+const showAlert = () =>
+  Alert.alert('Give permissions', 'Permissions dialog', [
+    {
+      text: 'Give permissions',
+      onPress: () => openAppSettings(),
+      style: 'cancel',
+    },
+  ]);
+
+const CrewMember = (item: Item) => {
+  const ctx = useSpaceXContext();
+
   const [cameraPermissionStatus, checkCameraPermission] = usePermission(
     permissionStrings.camera,
   );
@@ -22,9 +56,19 @@ const CrewMember = (props: Props) => {
     checkTrackingPermission();
   }, []);
 
+  useEffect(() => {
+    (cameraPermissionStatus ||
+      galleryPermissionStatus ||
+      trackingPermissionStatus) === RESULTS.BLOCKED && showAlert();
+  }, [
+    cameraPermissionStatus,
+    galleryPermissionStatus,
+    trackingPermissionStatus,
+  ]);
+
   return (
     <View style={styles.container}>
-      <Text>CrewMember Screen</Text>
+      <Card {...ctx.state.member} kind="member" />
     </View>
   );
 };
@@ -32,6 +76,8 @@ const CrewMember = (props: Props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

@@ -15,8 +15,6 @@ export const actions = {
   setMembersError: 'setMembersError',
   setMembersSuccess: 'setMembersSuccess',
   setMember: 'setMember',
-  setMemberError: 'setMemberError',
-  setMemberSuccess: 'setMemberSuccess',
 };
 
 export const Context = React.createContext({
@@ -37,12 +35,8 @@ export const reducer = (state, action) => {
     case actions.setMembersError:
       return {...state, error: true, loading: false};
     case actions.setMembersSuccess:
-      return {...state, members: action.payload};
+      return {...state, members: action.payload, loading: false};
     case actions.setMember:
-      return {...state, loading: true};
-    case actions.setMemberError:
-      return {...state, error: true, loading: false};
-    case actions.setMemberSuccess:
       return {...state, member: action.payload};
     default:
       return state;

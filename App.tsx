@@ -17,7 +17,7 @@ import NetInfo from '@react-native-community/netinfo';
 import {navigationRef} from './src/navigation/RootNavigation';
 import ContextProvider from './src/modules/context/Context';
 import FlashMessage from 'react-native-flash-message';
-import Loader from './src/components/Loader/Loader';
+import Loader from './src/components/loader/Loader';
 
 const App = () => {
   const [isConnected, setIsConnected] = useState(true);

@@ -1,5 +1,4 @@
 import React from 'react';
-import {useEffect} from 'react';
 import Spinner from 'react-native-loading-spinner-overlay';
 import useSpaceXContext from '../../modules/hooks/useSpaceXData';
 

@@ -5,6 +5,7 @@ const ROCKET_EXT = '/rockets';
 const MEMBERS_EXT = '/crew';
 
 class SpaceXService {
+  
   async getRockets() {
     return axios.get(URL + ROCKET_EXT);
   }
