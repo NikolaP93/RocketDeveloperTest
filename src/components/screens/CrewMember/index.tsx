@@ -1,6 +1,7 @@
-import React from 'react';
+import {useFocusEffect, useNavigation} from '@react-navigation/native';
+import React, {useCallback, useState} from 'react';
 import {useEffect} from 'react';
-import {Alert} from 'react-native';
+import {Alert, Platform} from 'react-native';
 import {View, StyleSheet} from 'react-native';
 import {openSettings, RESULTS} from 'react-native-permissions';
 import {
@@ -10,9 +11,6 @@ import {
 import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
 import {handleError} from '../../../util/error';
 import Card from '../../card/Card';
-
-import * as RootNavigation from '../../../navigation/RootNavigation';
-import {useState} from 'react';
 
 interface Item {
   name: string;
@@ -33,12 +31,13 @@ const showAlert = () =>
     {
       text: 'Give permissions',
       onPress: () => openAppSettings(),
-      style: 'cancel',
+      style: 'default',
     },
   ]);
 
 const CrewMember = (item: Item) => {
   const ctx = useSpaceXContext();
+  const navigation = useNavigation();
 
   const [cameraPermissionStatus, checkCameraPermission] = usePermission(
     permissionStrings.camera,
@@ -50,16 +49,18 @@ const CrewMember = (item: Item) => {
     permissionStrings.tracking,
   );
 
-  useEffect(() => {
-    checkCameraPermission();
-    checkGalleryPermission();
-    checkTrackingPermission();
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      checkCameraPermission();
+      checkGalleryPermission();
+      checkTrackingPermission();
+    }, [navigation]),
+  );
 
   useEffect(() => {
-    (cameraPermissionStatus ||
-      galleryPermissionStatus ||
-      trackingPermissionStatus) === RESULTS.BLOCKED && showAlert();
+    cameraPermissionStatus === RESULTS.BLOCKED && showAlert();
+    galleryPermissionStatus === RESULTS.BLOCKED && showAlert();
+    trackingPermissionStatus === RESULTS.BLOCKED && showAlert();
   }, [
     cameraPermissionStatus,
     galleryPermissionStatus,
@@ -68,7 +69,11 @@ const CrewMember = (item: Item) => {
 
   return (
     <View style={styles.container}>
-      <Card {...ctx.state.member} kind="member" />
+      {cameraPermissionStatus === RESULTS.GRANTED &&
+      galleryPermissionStatus === RESULTS.GRANTED &&
+      Platform.OS === 'ios'
+        ? trackingPermissionStatus === RESULTS.GRANTED
+        : true && <Card {...ctx.state.member} kind="member" />}
     </View>
   );
 };
