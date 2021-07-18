@@ -70,10 +70,10 @@ const CrewMember = (item: Item) => {
   return (
     <View style={styles.container}>
       {cameraPermissionStatus === RESULTS.GRANTED &&
-      galleryPermissionStatus === RESULTS.GRANTED &&
-      Platform.OS === 'ios'
-        ? trackingPermissionStatus === RESULTS.GRANTED
-        : true && <Card {...ctx.state.member} kind="member" />}
+        galleryPermissionStatus === RESULTS.GRANTED &&
+        (Platform.OS === 'ios'
+          ? trackingPermissionStatus === RESULTS.GRANTED
+          : true) && <Card {...ctx.state.member} kind="member" />}
     </View>
   );
 };
