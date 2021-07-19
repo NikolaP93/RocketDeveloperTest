@@ -14,6 +14,7 @@
 		66D1B0627D9830229FA0817E /* libPods-RocketDeveloperTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC1F132EB6E80BB132D6F2D /* libPods-RocketDeveloperTest.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C73A6A4226A30DFA009F462B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A6A4126A30DFA009F462B /* File.swift */; };
+		C75B314426A61B9C00C97DA6 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75B314326A61B9C00C97DA6 /* BootSplash.storyboard */; };
 		FECB9D22738CC08FDEC11372 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FC4BF24D81D2F3188E3B38 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		C73A6A4026A30DF9009F462B /* RocketDeveloperTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RocketDeveloperTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		C73A6A4126A30DFA009F462B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C73A6A4526A323B2009F462B /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../../../reusables-reactnative/node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		C75B314326A61B9C00C97DA6 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = RocketDeveloperTest/BootSplash.storyboard; sourceTree = "<group>"; };
 		C8658A9569A16F6B136EED98 /* Pods-RocketDeveloperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.release.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.release.xcconfig"; sourceTree = "<group>"; };
 		D1FC4BF24D81D2F3188E3B38 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RocketDeveloperTest-RocketDeveloperTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				C75B314326A61B9C00C97DA6 /* BootSplash.storyboard */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -257,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75B314426A61B9C00C97DA6 /* BootSplash.storyboard in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

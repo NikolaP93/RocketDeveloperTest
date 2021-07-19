@@ -5,10 +5,13 @@ import Rocket from '../components/screens/Rockets';
 import CrewMembersStack from './CrewMembersStack';
 
 import {TabRoutes} from './config/Routes';
+import RNSplash from 'react-native-bootsplash';
 
 const Tab = createBottomTabNavigator();
 
 const Router = () => {
+  RNSplash.hide();
+
   return (
     <Tab.Navigator>
       <Tab.Screen name={TabRoutes.rocket} component={Rocket} />

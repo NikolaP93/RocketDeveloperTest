@@ -24,12 +24,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-  <key>NSPhotoLibraryUsageDescription</key>
-  <string>For viewing the gallery</string>
-  <key>NSCameraUsageDescription</key>
-	<string>For taking a photo.</string>
-  <key>NSUserTrackingUsageDescription</key>
-  <string>For tracking</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -41,17 +35,25 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>For taking a photo.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For viewing the gallery</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>For tracking</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MaterialIcons.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>BootSplash</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
-	</array>
-  <key>UIAppFonts</key>
-	<array>
-		<string>MaterialIcons.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
