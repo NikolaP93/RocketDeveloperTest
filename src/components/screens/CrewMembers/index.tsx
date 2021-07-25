@@ -19,7 +19,7 @@ const CrewMembers = (): JSX.Element => {
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollView}>
                 {ctx?.state?.members.map((item, index) => (
-                    <Card key={index} onPress={onPressHandler} kind={KindState.Member} {...item} />
+                    <Card key={index} onPress={onPressHandler} kind={KindState.Members} {...item} />
                 ))}
             </ScrollView>
         </SafeAreaView>
