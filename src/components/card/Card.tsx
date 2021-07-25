@@ -17,14 +17,14 @@ interface Mass {
 }
 
 interface Props {
-    id: string;
-    mass: Mass;
-    type: string;
-    name: string;
-    agency: string;
+    id?: string;
+    mass?: Mass;
+    type?: string;
+    name?: string;
+    agency?: string;
     kind: KindState;
-    onPress(id: string): void;
-    image: string;
+    onPress?(id: string): void;
+    image?: string;
 }
 
 const Card = (props: Props): JSX.Element => {
