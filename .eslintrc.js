@@ -17,7 +17,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       2,
       {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', 'ts', 'tsx'],
       },
     ],
     'prettier/prettier': [
@@ -38,11 +38,11 @@ module.exports = {
     'no-underscore-dangle': [0],
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
-    quotes: [1, 'double'],
+    quotes: [1, 'single'],
     semi: ['error', 'always'],
     'max-len': [
       'error',
-      { code: 100, ignorePattern: "^import\\s.+\\sfrom\\s.+;$" },
+      {code: 100, ignorePattern: '^import\\s.+\\sfrom\\s.+;$'},
     ],
   },
 };

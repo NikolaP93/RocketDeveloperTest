@@ -5,7 +5,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
 import {StackRoutes} from '../../../navigation/config/Routes';
 import * as RootNavigation from '../../../navigation/RootNavigation';
-import Card from '../../card/Card';
+import Card, {KindState} from '../../card/Card';
 
 interface Props {}
 
@@ -21,7 +21,12 @@ const CrewMembers = (props: Props) => {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         {ctx?.state?.members.map((item, index) => (
-          <Card key={index} onPress={onPressHandler} kind="members" {...item} />
+          <Card
+            key={index}
+            onPress={onPressHandler}
+            kind={KindState.Member}
+            {...item}
+          />
         ))}
       </ScrollView>
     </SafeAreaView>
