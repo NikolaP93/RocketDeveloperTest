@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
 import { StackRoutes } from '../../../navigation/config/Routes';
 import * as RootNavigation from '../../../navigation/RootNavigation';
 import Card, { KindState } from '../../card/Card';
+import { styles } from './index.styles';
 
 const CrewMembers = (): JSX.Element => {
     const ctx = useSpaceXContext();
@@ -25,15 +25,5 @@ const CrewMembers = (): JSX.Element => {
         </SafeAreaView>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-    },
-    scrollView: {
-        flexGrow: 1,
-    },
-});
 
 export default CrewMembers;

@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect } from 'react';
+import { Alert, View, Platform } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-
-import { Alert, View, StyleSheet, Platform } from 'react-native';
 
 import { openSettings, RESULTS } from 'react-native-permissions';
 import { usePermission, permissionStrings } from '../../../modules/hooks/usePermissions';
 import useSpaceXContext from '../../../modules/hooks/useSpaceXData';
 import { handleError } from '../../../util/error';
 import Card, { KindState } from '../../card/Card';
+import { styles } from './index.styles';
 
 const openAppSettings = async () => {
     try {
@@ -58,13 +58,5 @@ const CrewMember = () => {
         </View>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-});
 
 export default CrewMember;
