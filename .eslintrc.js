@@ -1,48 +1,24 @@
 module.exports = {
-  env: {
-    'react-native/react-native': true,
-    es6: true,
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-native/all',
-    'airbnb',
-    'prettier',
-    'prettier/react',
-  ],
-  plugins: ['react', 'react-native', 'prettier'],
-  parser: 'babel-eslint',
-  rules: {
-    'react/jsx-filename-extension': [
-      2,
-      {
-        extensions: ['.js', '.jsx', 'ts', 'tsx'],
-      },
+    parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+    parserOptions: {
+        ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
+        sourceType: 'module', // Allows for the use of imports
+        ecmaFeatures: {
+            jsx: true, // Allows for the parsing of JSX
+        },
+    },
+    settings: {
+        react: {
+            version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
+        },
+    },
+    extends: [
+        'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
+        'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+        'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     ],
-    'prettier/prettier': [
-      'error',
-      {
-        bracketSpacing: true,
-        jsxBracketSameLine: true,
-        trailingComma: 'all',
-        arrowParens: 'avoid',
-      },
-    ],
-    'react-native/no-unused-styles': 2,
-    'react/jsx-uses-vars': 2,
-    'react-native/no-color-literals': [0],
-    'react/forbid-prop-types': [0],
-    'react/require-default-props': [0],
-    'global-require': [0],
-    'no-underscore-dangle': [0],
-    indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
-    quotes: [1, 'single'],
-    semi: ['error', 'always'],
-    'max-len': [
-      'error',
-      {code: 100, ignorePattern: '^import\\s.+\\sfrom\\s.+;$'},
-    ],
-  },
+    rules: {
+        // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+        // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+    },
 };
