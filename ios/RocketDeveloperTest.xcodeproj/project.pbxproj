@@ -11,11 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		66D1B0627D9830229FA0817E /* libPods-RocketDeveloperTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC1F132EB6E80BB132D6F2D /* libPods-RocketDeveloperTest.a */; };
+		3C68CEB3D17E59FAF2D15673 /* libPods-RocketDeveloperTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04550D39C833F9D02DA4006F /* libPods-RocketDeveloperTest.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C73A6A4226A30DFA009F462B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A6A4126A30DFA009F462B /* File.swift */; };
+		8468CBA81E143055E729A913 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B77DCE681D687ACB5AF903E /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */; };
 		C75B314426A61B9C00C97DA6 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75B314326A61B9C00C97DA6 /* BootSplash.storyboard */; };
-		FECB9D22738CC08FDEC11372 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FC4BF24D81D2F3188E3B38 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,24 +31,24 @@
 		00E356EE1AD99517003FC87E /* RocketDeveloperTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketDeveloperTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RocketDeveloperTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RocketDeveloperTestTests.m; sourceTree = "<group>"; };
+		04550D39C833F9D02DA4006F /* libPods-RocketDeveloperTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RocketDeveloperTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* RocketDeveloperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketDeveloperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RocketDeveloperTest/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RocketDeveloperTest/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RocketDeveloperTest/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RocketDeveloperTest/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RocketDeveloperTest/main.m; sourceTree = "<group>"; };
-		1A3EDA5C6BBD129FEE0252A1 /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig"; sourceTree = "<group>"; };
-		6F170ABDE83A278501A93BBD /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30BDC0CB9B8641DE4B6423B7 /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B77DCE681D687ACB5AF903E /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RocketDeveloperTest-RocketDeveloperTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RocketDeveloperTest/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B6B02AA7342974FC67A72977 /* Pods-RocketDeveloperTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.debug.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9A9067EE89137CC0BF644F2B /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		AED397A62F76DDEDBD686D42 /* Pods-RocketDeveloperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.release.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.release.xcconfig"; sourceTree = "<group>"; };
 		C73A6A4026A30DF9009F462B /* RocketDeveloperTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RocketDeveloperTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		C73A6A4126A30DFA009F462B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C73A6A4526A323B2009F462B /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../../../reusables-reactnative/node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		C75B314326A61B9C00C97DA6 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = RocketDeveloperTest/BootSplash.storyboard; sourceTree = "<group>"; };
-		C8658A9569A16F6B136EED98 /* Pods-RocketDeveloperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.release.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.release.xcconfig"; sourceTree = "<group>"; };
-		D1FC4BF24D81D2F3188E3B38 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RocketDeveloperTest-RocketDeveloperTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CCD28326C05D860077B42C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E771E76E1B8ECB4A10AE57EE /* Pods-RocketDeveloperTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketDeveloperTest.debug.xcconfig"; path = "Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FBC1F132EB6E80BB132D6F2D /* libPods-RocketDeveloperTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RocketDeveloperTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FECB9D22738CC08FDEC11372 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a in Frameworks */,
+				8468CBA81E143055E729A913 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D1B0627D9830229FA0817E /* libPods-RocketDeveloperTest.a in Frameworks */,
+				3C68CEB3D17E59FAF2D15673 /* libPods-RocketDeveloperTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				FBC1F132EB6E80BB132D6F2D /* libPods-RocketDeveloperTest.a */,
-				D1FC4BF24D81D2F3188E3B38 /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */,
+				04550D39C833F9D02DA4006F /* libPods-RocketDeveloperTest.a */,
+				6B77DCE681D687ACB5AF903E /* libPods-RocketDeveloperTest-RocketDeveloperTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,10 +115,10 @@
 		733D775E6BF3CB0842C444BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6B02AA7342974FC67A72977 /* Pods-RocketDeveloperTest.debug.xcconfig */,
-				C8658A9569A16F6B136EED98 /* Pods-RocketDeveloperTest.release.xcconfig */,
-				6F170ABDE83A278501A93BBD /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig */,
-				1A3EDA5C6BBD129FEE0252A1 /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig */,
+				E771E76E1B8ECB4A10AE57EE /* Pods-RocketDeveloperTest.debug.xcconfig */,
+				AED397A62F76DDEDBD686D42 /* Pods-RocketDeveloperTest.release.xcconfig */,
+				30BDC0CB9B8641DE4B6423B7 /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig */,
+				9A9067EE89137CC0BF644F2B /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -134,7 +133,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				C73A6A4126A30DFA009F462B /* File.swift */,
+				C7CCD28326C05D860077B42C /* File.swift */,
 				C73A6A4426A3239C009F462B /* Resources */,
 				13B07FAE1A68108700A75B9A /* RocketDeveloperTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -173,12 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RocketDeveloperTestTests" */;
 			buildPhases = (
-				189DA50C8754AA0D18935E0D /* [CP] Check Pods Manifest.lock */,
+				851C62079CF4911030AB6651 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				9086B654B57AA839E9F503D9 /* [CP] Embed Pods Frameworks */,
-				E480C597E309F440037D75CC /* [CP] Copy Pods Resources */,
+				E52F59AD1D60DCFF0D7ABBA1 /* [CP] Embed Pods Frameworks */,
+				5E65F99AB915F8D64B693E31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,14 +193,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RocketDeveloperTest" */;
 			buildPhases = (
-				83D8F99552AB4C7FB22FC045 /* [CP] Check Pods Manifest.lock */,
+				B934479572A32B73EC829F43 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				CB6CD0068E91BB55EED6A04F /* [CP] Embed Pods Frameworks */,
-				4BE512EC3B9B300588CF39D8 /* [CP] Copy Pods Resources */,
+				5981C433D8E80CB11A6790F3 /* [CP] Embed Pods Frameworks */,
+				69E623E0FA941A5B0C339B69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +282,58 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		189DA50C8754AA0D18935E0D /* [CP] Check Pods Manifest.lock */ = {
+		5981C433D8E80CB11A6790F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E65F99AB915F8D64B693E31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69E623E0FA941A5B0C339B69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851C62079CF4911030AB6651 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,24 +355,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4BE512EC3B9B300588CF39D8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83D8F99552AB4C7FB22FC045 /* [CP] Check Pods Manifest.lock */ = {
+		B934479572A32B73EC829F43 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,7 +377,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9086B654B57AA839E9F503D9 /* [CP] Embed Pods Frameworks */ = {
+		E52F59AD1D60DCFF0D7ABBA1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,40 +392,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB6CD0068E91BB55EED6A04F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest/Pods-RocketDeveloperTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E480C597E309F440037D75CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketDeveloperTest-RocketDeveloperTestTests/Pods-RocketDeveloperTest-RocketDeveloperTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				C73A6A4226A30DFA009F462B /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,9 +446,8 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F170ABDE83A278501A93BBD /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig */;
+			baseConfigurationReference = 30BDC0CB9B8641DE4B6423B7 /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -476,9 +473,8 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A3EDA5C6BBD129FEE0252A1 /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig */;
+			baseConfigurationReference = 9A9067EE89137CC0BF644F2B /* Pods-RocketDeveloperTest-RocketDeveloperTestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RocketDeveloperTestTests/Info.plist;
@@ -501,7 +497,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6B02AA7342974FC67A72977 /* Pods-RocketDeveloperTest.debug.xcconfig */;
+			baseConfigurationReference = E771E76E1B8ECB4A10AE57EE /* Pods-RocketDeveloperTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -509,6 +505,7 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = RocketDeveloperTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,12 +526,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8658A9569A16F6B136EED98 /* Pods-RocketDeveloperTest.release.xcconfig */;
+			baseConfigurationReference = AED397A62F76DDEDBD686D42 /* Pods-RocketDeveloperTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RocketDeveloperTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
